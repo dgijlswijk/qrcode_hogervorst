@@ -1,8 +1,11 @@
 import qrcode
 import PIL
 from PIL import ImageFont
+import os
+import time
 
 import tkinter as tk
+from tkinter import filedialog
 
 root = tk.Tk()
 root.withdraw()
@@ -35,3 +38,5 @@ image_editable.text((245,40), str(servicenummer), fill=(0, 0, 0), font=font)
 
 # im.save(file_path.name)
 im.show()
+
+input("Druk op enter om door te gaan")
