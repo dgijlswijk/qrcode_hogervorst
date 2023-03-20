@@ -1,11 +1,8 @@
 import qrcode
 import PIL
 from PIL import ImageFont
-import os
-import time
 
 import tkinter as tk
-from tkinter import filedialog
 
 root = tk.Tk()
 root.withdraw()
