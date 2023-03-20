@@ -10,7 +10,7 @@ from tkinter import filedialog
 root = tk.Tk()
 root.withdraw()
 
-file_path = filedialog.asksaveasfile(defaultextension=".png", filetypes=(("png file", "*.png"),("All Files", "*.*") ))
+# file_path = filedialog.asksaveasfile(defaultextension=".png", filetypes=(("png file", "*.png"),("All Files", "*.*") ))
 
 servicenummer = tk.simpledialog.askstring("Servicenummer", "Servicenummer: ",)
 
@@ -36,4 +36,5 @@ image_editable = PIL.ImageDraw.Draw(im)
 font = ImageFont.truetype("files/Gidole-Regular.ttf", size=90)
 image_editable.text((245,40), str(servicenummer), fill=(0, 0, 0), font=font)
 
-im.save(file_path.name)
+# im.save(file_path.name)
+im.show()
